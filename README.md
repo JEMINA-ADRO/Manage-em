@@ -192,31 +192,7 @@ Streamlit uses `st.cache_resource` so the loaded model can be reused during the 
 
 ## Application Architecture
 
-```text
-                         User
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │  Streamlit UI   │
-                  │     app.py      │
-                  └────────┬────────┘
-                           │
-              ┌────────────┼─────────────┐
-              │            │             │
-              ▼            ▼             ▼
-          Task CRUD     Dashboard    AI Features
-              │                          │
-              ▼                          ▼
-        ┌───────────┐              ┌──────────────┐
-        │  SQLite   │              │ ai_service.py│
-        │ tasks.db  │              └───────┬──────┘
-        └───────────┘                      │
-                                           ▼
-                                    ┌─────────────┐
-                                    │  Qwen3-4B   │
-                                    │ Local Model │
-                                    └─────────────┘
-```
+![Application Architecture](docs/Arch_dia.png)
 
 ## AI Quick Add Flow
 
@@ -281,10 +257,31 @@ Possible future improvements include:
 * Cloud-hosted AI inference
 * Additional dashboard visualizations
 
+## Screenshots from App
+
+### Dashboard and App
+
+![Dashboard](screenshots/App_view.png)
+
+## Add and Edit task
+![Add](screenshots/Add.png)
+![Edit](screenshots/Edit.png)
+
+## Search, Filter, Sort
+
+![Search and Filter](screenshots/SearchandFilter.png)
+![Filtered](screenshots/Filtered.png)
+![Sort](screenshots/Sort.png)
+
+## Quick Add
+
+![Quick add](screenshots/Quickadd.png)
+![Quick add done](screenshots/Quickadded.png)
+
+## AI Summary
+![AI Summary](screenshots/Summary.png)
 
 ## AI Usage Disclosure
-
-
 
 Generative AI tools were used during the development of this project.
 
@@ -295,8 +292,6 @@ ChatGPT was used as a development assistant for:
 * Reviewing and refining code
 * Designing test cases
 * Assisting with project documentation
-
-
 
 All AI-assisted content was modified, reviewed, and validated by the author.
 
