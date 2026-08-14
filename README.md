@@ -87,11 +87,11 @@ If no deadline is provided, the application assigns a default deadline of one ho
 ## Project Structure
 
 ```text
-App\\\_Service/
+App_Service/
 │
 ├── app.py
-├── ai\\\_service.py
-├── test\\\_ai.py
+├── ai_service.py
+├── test_ai.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
