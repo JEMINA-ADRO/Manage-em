@@ -138,8 +138,8 @@ The database is created automatically when the application runs for the first ti
 ### 1\. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd App\\\_Service
+git clone https://github.com/JEMINA-ADRO/Manage-em/
+cd App_Service
 ```
 
 ### 2\. Create a virtual environment
@@ -153,7 +153,7 @@ python -m venv venv
 Windows:
 
 ```bash
-venv\\\\Scripts\\\\activate
+venv\Scripts\activate
 ```
 
 ### 4\. Install dependencies
@@ -188,7 +188,7 @@ The model files are not stored in this GitHub repository. They are downloaded by
 
 The first AI operation may therefore take longer while the model is downloaded or loaded into memory.
 
-Streamlit uses `st.cache\\\_resource` so the loaded model can be reused during the application session.
+Streamlit uses `st.cache_resource` so the loaded model can be reused during the application session.
 
 ## Application Architecture
 
@@ -208,7 +208,7 @@ Streamlit uses `st.cache\\\_resource` so the loaded model can be reused during t
               │                          │
               ▼                          ▼
         ┌───────────┐              ┌──────────────┐
-        │  SQLite   │              │ ai\\\_service.py│
+        │  SQLite   │              │ ai_service.py│
         │ tasks.db  │              └───────┬──────┘
         └───────────┘                      │
                                            ▼
