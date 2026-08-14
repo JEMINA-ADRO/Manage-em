@@ -1,0 +1,34 @@
+                         USER
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │  Streamlit UI   │
+                  │     app.py      │
+                  └────────┬────────┘
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+              ▼            ▼            ▼
+        Task Management  Dashboard   AI Features
+              │                         │
+              ▼                         ▼
+         ┌─────────┐             ┌───────────────┐
+         │ SQLite  │             │ ai_service.py │
+         │tasks.db │             └───────┬───────┘
+         └─────────┘                     │
+                                         ▼
+                                  ┌─────────────┐
+                                  │  Qwen3-4B   │
+                                  │ Local LLM   │
+                                  └──────┬──────┘
+                                         │
+                            ┌────────────┴────────────┐
+                            │                         │
+                            ▼                         ▼
+                     AI Task Summary           AI Quick Add
+                                                      │
+                                                      ▼
+                                             Datetime Resolution
+                                                      │
+                                                      ▼
+                                                 SQLite DB
