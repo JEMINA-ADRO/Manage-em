@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+task/
+venv/
+.venv/
+
+# Local database
+tasks.db
+
+# Hugging Face / model cache
+.cache/
+huggingface/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# IDE files
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
