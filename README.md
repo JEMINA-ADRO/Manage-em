@@ -268,6 +268,7 @@ The application was tested for:
 * Initial model download and loading may take time.
 * The application currently uses a local SQLite database.
 * The current version is designed primarily for a single-user task management workflow.
+* The application is currently intended for local execution because the Qwen3-4B model requires more compute and memory than typical free application hosting tiers provide.
 
 ## Future Improvements
 
@@ -279,6 +280,7 @@ Possible future improvements include:
 * Multi-user database support
 * Cloud-hosted AI inference
 * Additional dashboard visualizations
+
 
 ## AI Usage Disclosure
 
@@ -297,4 +299,5 @@ ChatGPT was used as a development assistant for:
 
 
 All AI-assisted content was modified, reviewed, and validated by the author.
+
 
